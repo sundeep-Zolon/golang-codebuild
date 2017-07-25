@@ -2,7 +2,7 @@ version: 0.1
 
 environment_variables:
   plaintext:
-    PACKAGE: "github.com/dharnitski/golang-codebuild"
+    PACKAGE: "github.com/sundeep-Zolon/golang-codebuild"
 
 phases:
   install: 
@@ -16,7 +16,7 @@ phases:
       - echo Copy source files into GOPATH
       - echo cp -a ${CODEBUILD_SRC_DIR}/.  ${GOPATH}/src/${PACKAGE}
       - cp -a ${CODEBUILD_SRC_DIR}/.  ${GOPATH}/src/${PACKAGE}
-
+      
 
   build:
     commands:
