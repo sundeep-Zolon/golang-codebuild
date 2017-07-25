@@ -17,7 +17,6 @@ phases:
       - echo cp -a ${CODEBUILD_SRC_DIR}/.  ${GOPATH}/src/${PACKAGE}
       - cp -a ${CODEBUILD_SRC_DIR}/.  ${GOPATH}/src/${PACKAGE}
 
-      - cd ${GOPATH}/src/${PACKAGE} && go get ./...
 
   build:
     commands:
